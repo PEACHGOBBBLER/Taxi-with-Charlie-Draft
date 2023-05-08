@@ -74,22 +74,28 @@ a {
 .contact {
     background-color: var(--background-color);
     color: black;
-    width: 90%;
+    width: 80%;
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 15px;
     box-shadow: 1px 5px 5px #000000;
 }
 
+form {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .form-group {
     font-size: 26px;
     font-weight: 800;
-    width: 95%;
+    width: 90%;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
+    width: 90%;
     margin-top: 5px;
     font-size: 24px;
 }
@@ -100,7 +106,7 @@ a {
 
 button[type="submit"] {
     align-self: flex-start;
-    width: 100%;
+    width: 80%;
     max-width: 450px;
     font-family: var(--font);
     border: none;
@@ -113,6 +119,7 @@ button[type="submit"] {
     transition: 200ms;
     background-color: var(--important-text);
     color: var(--text-color);
+    align-self: auto;
 }
 
 button[type="submit"]:hover {
@@ -338,15 +345,15 @@ footer {
     }
 }
 
-@media screen and (min-width: 400px) {
-    .numbers {
-        justify-content: space-around;
+@media screen and (max-width: 400px) {
+    .vehicle-details {
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width: 550px) {
-    #up-arrow {
-        display: none;
+@media screen and (min-width: 400px) {
+    .numbers {
+        justify-content: space-around;
     }
 }
 
@@ -420,6 +427,12 @@ footer {
         word-spacing: 5px;
         border-radius: 5px;
         font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    #up-arrow {
+        display: none;
     }
 }
 
