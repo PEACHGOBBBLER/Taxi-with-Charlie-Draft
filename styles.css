@@ -195,7 +195,7 @@ button[type="submit"]:hover {
     border-radius: 5px;
     font-size: 24px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     box-shadow: 1px 5px 5px #000000;
     
@@ -209,6 +209,10 @@ button[type="submit"]:hover {
 
 .detail:last-of-type {
     margin-bottom: 10px;
+}
+
+li {
+    list-style-type: none;
 }
 
 /*POLICY*/
